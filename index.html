@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="#020611">
+  <title>SANDI SAPTA A.P — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOADING SCREEN -->
+  <div id="loader" class="loader">
+    <canvas id="stars-loader"></canvas>
+    <div class="lightning lightning-a"></div>
+    <div class="lightning lightning-b"></div>
+    <div class="loader-content">
+      <div class="loader-title">PORTFOLIO</div>
+      <div class="loader-sub">EKA WAHYU MAULIDAN</div>
+      <div class="loading-row"><span>Loading</span><strong id="load-percent">0%</strong></div>
+      <div class="progress"><i id="progress-bar"></i></div>
+    </div>
+  </div>
+
+  <canvas id="stars"></canvas>
+
+  <!-- FLOATING NAV -->
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-character" aria-hidden="true">
+      <div class="mask-eye e1"></div><div class="mask-eye e2"></div>
+      <div class="mask-smile"></div>
+    </div>
+    <div class="nav-point"></div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="home section">
+      <div class="home-inner">
+        <p class="small-label">IT Edu Student</p>
+        <h1><span>Turning Ideas</span><br>Into Reality</h1>
+        <p class="intro">Dimulai dari rasa penasaran, berkembang menjadi passion. Aku membangun pengalaman digital yang tidak hanya terlihat bagus, tapi juga terasa bermakna bagi penggunanya.</p>
+        <div class="actions">
+          <a href="#portfolio" class="btn blue">Project <span>↗</span></a>
+          <a href="#contact" class="btn dark">Contact Me <span>→</span></a>
+        </div>
+
+        <!-- SPOTIFY-STYLE CARD -->
+        <a class="spotify-card" href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">
+          <div class="spotify-heading">
+            <div>
+              <h2>Daily Rotation</h2>
+              <p>My Spotify Playlist...</p>
+            </div>
+            <span class="spotify-logo">●</span>
+          </div>
+          <div class="spotify-main">
+            <div class="album-art">
+              <img src="assets/playlist.jpg" alt="Playlist cover" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+              <span>PLAYLIST</span>
+            </div>
+            <div class="playlist-meta">
+              <strong>New Life · whyu</strong>
+              <small>Spotify Playlist</small>
+            </div>
+            <div class="play-circle">▶</div>
+          </div>
+          <div class="tracks">
+            <div><em>1</em><span>Terbuang Dalam Waktu<small>Barasuara</small></span><time>04:41</time></div>
+            <div><em>2</em><span>Raindance (feat. Tems)<small>Dave, Tems</small></span><time>03:39</time></div>
+            <div><em>3</em><span>Одного<small>Татьяна Куртукова</small></span><time>03:12</time></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+      <div class="section-title">About Me</div>
+      <div class="person-stage">
+        <div class="person-glow"></div>
+        <button id="person" class="person-button" title="Klik foto untuk berubah menjadi Spider-Man">
+          <img id="normal-person" src="assets/profile.png" alt="Foto Eka" onerror="this.style.display='none';document.querySelector('.normal-fallback').style.display='flex'">
+          <div class="normal-fallback">FOTO<br><small>assets/profile.png</small></div>
+          <img id="spiderman" class="spiderman" src="assets/spiderman.png" alt="Spider-Man" onerror="this.style.display='none';document.querySelector('.spider-fallback').style.display='flex'">
+          <div class="spider-fallback">SPIDER-MAN<br><small>assets/spiderman.png</small></div>
+        </button>
+      </div>
+
+      <div class="about-copy">
+        <h3><span>Hi, I'm</span><br>SANDI SAPTA A.P</h3>
+        <p>Sebagai mahasiswa SMK PENERBANGAN SMK PENERBANGAN, Aku berfokus pada pengembangan teknologi yang tidak hanya fungsional, tetapi juga menghadirkan pengalaman digital yang menarik dan berdampak.</p>
+        <div class="about-buttons">
+          <a class="wide-btn blue" href="assets/resume.pdf" target="_blank">▣ &nbsp; View Resume</a>
+          <a class="wide-btn" href="#portfolio">&lt;/&gt; &nbsp; View Projects</a>
+        </div>
+      </div>
+
+      <div class="education">
+        <h4>Education</h4>
+        <div class="edu-card">
+          <div><strong>SMK PENERBANGAN</strong><span>SMK PENERBANGAN</span></div>
+          <b>Pendidikan SMK PENERBANGAN</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio section">
+      <div class="section-title">Portfolio</div>
+      <p class="section-desc">Beberapa project yang bisa kamu tampilkan. Semua gambar dan teks dapat diganti dari file HTML.</p>
+      <div class="project-grid">
+        <a class="project" href="#" onclick="return false">
+          <div class="project-img"><img src="assets/project-1.jpg" alt="Project 1"><span>PROJECT 01</span></div>
+          <h3>Project Website</h3><p>Web Development · HTML · CSS · JS</p>
+        </a>
+        <a class="project" href="#" onclick="return false">
+          <div class="project-img"><img src="assets/project-2.jpg" alt="Project 2"><span>PROJECT 02</span></div>
+          <h3>Creative Web App</h3><p>UI/UX · JavaScript</p>
+        </a>
+        <a class="project" href="#" onclick="return false">
+          <div class="project-img"><img src="assets/project-3.jpg" alt="Project 3"><span>PROJECT 03</span></div>
+          <h3>Digital Experience</h3><p>Design · Development</p>
+        </a>
+      </div>
+
+      <div class="certificates">
+        <h3>Certificates & Achievements</h3>
+        <div class="cert-grid">
+          <img src="assets/certificates/cert-1.jpg" alt="Certificate 1">
+          <img src="assets/certificates/cert-2.jpg" alt="Certificate 2">
+          <img src="assets/certificates/cert-3.jpg" alt="Certificate 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+      <div class="section-title">Contact</div>
+      <h3>Let's create something<br><span>meaningful.</span></h3>
+      <p>Ganti link di bawah dengan akunmu sendiri.</p>
+      <div class="contact-list">
+        <a href="mailto:emailkamu@example.com">Email ↗</a>
+        <a href="https://github.com/" target="_blank">GitHub ↗</a>
+        <a href="https://instagram.com/" target="_blank">Instagram ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 SANDI SAPTA A.P · Built with curiosity.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
