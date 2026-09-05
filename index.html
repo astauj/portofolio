@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020611">
+  <meta name="description" content="Portfolio cinematic Sandi Sapta A.P">
+  <title>SANDI SAPTA A.P — Cinematic Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress"><i id="scroll-progress"></i></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <div id="loader" class="loader">
+    <canvas id="stars-loader"></canvas>
+    <div class="loader-grid"></div>
+    <div class="loader-flash"></div>
+    <div class="lightning lightning-a"></div>
+    <div class="lightning lightning-b"></div>
+    <div class="lightning-core"></div>
+    <div class="loader-rings"><span></span><span></span><span></span></div>
+    <div class="loader-content">
+      <div class="loader-kicker">SYSTEM // SANDI SAPTA A.P</div>
+      <div class="loader-title" data-text="PORTFOLIO">PORTFOLIO</div>
+      <div class="loader-sub">CINEMATIC EXPERIENCE</div>
+      <div class="loading-row"><span>Loading experience</span><strong id="load-percent">0%</strong></div>
+      <div class="progress"><i id="progress-bar"></i></div>
+      <div class="loader-status" id="loader-status">CONNECTING TO THE GRID...</div>
+    </div>
+    <div class="loader-corner corner-tl"></div><div class="loader-corner corner-tr"></div>
+    <div class="loader-corner corner-bl"></div><div class="loader-corner corner-br"></div>
+  </div>
+
+  <canvas id="stars"></canvas>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#achievements" class="nav-link">Awards</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-character"><div class="mask-eye e1"></div><div class="mask-eye e2"></div><div class="mask-smile"></div></div>
+    <div class="nav-point"></div>
+  </header>
+
+  <main>
+    <section id="home" class="home section reveal cinematic-section">
+      <div class="parallax-depth depth-back"></div><div class="parallax-depth depth-mid"></div>
+      <div class="hero-noise"></div>
+      <div class="hero-inner" data-parallax="0.06">
+        <div class="hero-kicker"><span class="live-dot"></span> IT STUDENT · AVIATION · DIGITAL CREATIVE</div>
+        <h1><span>Turning Ideas</span><br>Into Reality.</h1>
+        <p class="intro">Aku Sandi Sapta A.P. Seorang siswa yang tertarik pada programming, teknologi, dan bagaimana sebuah ide sederhana bisa berubah menjadi pengalaman digital yang keren dan berguna.</p>
+        <div class="actions">
+          <a href="#portfolio" class="btn blue">Explore Projects <span>↗</span></a>
+          <a href="#contact" class="btn dark">Contact Me <span>→</span></a>
+        </div>
+
+        <div class="identity-strip">
+          <div><b>SANDI SAPTA A.P</b><span>STUDENT / DEVELOPER</span></div>
+          <div><b>IT × AVIATION</b><span>LEARN · BUILD · IMPROVE</span></div>
+          <div><b>2026</b><span>PERSONAL PORTFOLIO</span></div>
+        </div>
+
+        <a class="spotify-card" href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">
+          <div class="spotify-heading"><div><h2>Daily Rotation</h2><p>Music that survives the coding session.</p></div><span class="spotify-logo">●</span></div>
+          <div class="spotify-main">
+            <div class="album-art"><div class="album-art-inner">SANDI<br><small>PLAYLIST</small></div></div>
+            <div class="playlist-meta"><strong>New Life · whyu</strong><small>Spotify Playlist</small><div class="mini-wave"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="play-circle">▶</div>
+          </div>
+          <div class="tracks">
+            <div><em>01</em><span>Terbuang Dalam Waktu<small>Barasuara</small></span><time>04:41</time></div>
+            <div><em>02</em><span>Raindance<small>Dave, Tems</small></span><time>03:39</time></div>
+            <div><em>03</em><span>Одного<small>Татьяна Куртукова</small></span><time>03:12</time></div>
+          </div>
+        </a>
+      </div>
+      <a class="scroll-hint" href="#about"><span>Scroll to explore</span><i></i></a>
+    </section>
+
+    <section id="about" class="about section reveal">
+      <div class="section-title"><span>01</span> About Me</div>
+      <div class="about-layout">
+        <div class="person-stage cinematic-section">
+          <div class="person-glow"></div><div class="web-burst"></div>
+          <div class="smoke-field"><i></i><i></i><i></i><i></i><i></i></div><div class="glitch-scan"></div>
+          <div class="energy-ring"></div>
+          <div class="person-caption">CLICK PORTRAIT TO TRANSFORM</div>
+          <button id="person" class="person-button" title="Klik foto untuk efek transformasi">
+            <img id="normal-person" src="assets/profile.jpg" alt="Foto Sandi Sapta A.P">
+            <div id="spiderOverlay" class="spider-overlay"><span class="spider-eye left"></span><span class="spider-eye right"></span><span class="spider-web"></span></div>
+          </button>
+          <div class="portrait-label"><b>SANDI SAPTA A.P</b><span>ORIGINAL PORTRAIT</span></div>
+        </div>
+
+        <div class="about-copy reveal-child">
+          <div class="eyebrow">WHO I AM</div>
+          <h2>Curious enough<br>to <span>build.</span></h2>
+          <p>Sebagai siswa SMK PENERBANGAN, aku belajar menggabungkan dunia teknologi dengan disiplin dan ketelitian. Aku suka membuat sesuatu dari nol, membongkar masalah, lalu mencoba membuat versi yang lebih baik.</p>
+          <div class="skill-pills"><span>Flutter</span><span>JavaScript</span><span>UI/UX</span><span>Creative Tech</span></div>
+          <div class="about-buttons"><a class="wide-btn blue" href="#portfolio">▣ &nbsp; View Projects</a><a class="wide-btn" href="#achievements">✦ &nbsp; Achievements</a></div>
+        </div>
+      </div>
+
+      <div class="education reveal-child">
+        <div class="education-head"><div class="eyebrow">EDUCATION</div><span>01</span></div>
+        <div class="edu-card"><div class="edu-icon">✦</div><div><strong>SMK PENERBANGAN</strong><span>Teknologi · Programming · Aviation</span></div><b>Student</b></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section reveal cinematic-section">
+      <div class="section-aura"></div>
+      <div class="section-title"><span>02</span> Selected Work</div>
+      <p class="section-desc">Project showcase dibuat sebagai tempat untuk menampilkan hasil belajar, eksperimen, dan karya digital Sandi.</p>
+      <div class="project-grid stagger">
+        <article class="project"><div class="project-img project-one"><div class="project-ui"><span>01</span><b>SANDI TOPUP</b><small>GAME TOP-UP EXPERIENCE</small></div></div><h3>Top Up Game Website</h3><p>Web Concept · UI Design · Payment Flow</p></article>
+        <article class="project"><div class="project-img project-two"><div class="project-ui"><span>02</span><b>TOOLS NEXUS</b><small>UTILITY DASHBOARD</small></div></div><h3>All Tools Dashboard</h3><p>Web App · Interactive UI · JavaScript</p></article>
+        <article class="project"><div class="project-img project-three"><div class="project-ui"><span>03</span><b>SMAGANASA</b><small>SCHOOL DIGITAL SPACE</small></div></div><h3>School Website</h3><p>Web Design · Information Architecture</p></article>
+      </div>
+    </section>
+
+    <section id="achievements" class="achievements section reveal">
+      <div class="section-title"><span>03</span> Awards & AI Showcase</div>
+      <div class="achievement-head">
+        <div><div class="eyebrow">SANDI SAPTA A.P</div><h2>Built for the<br><span>next level.</span></h2></div>
+        <p>Visual achievement cards di bawah adalah <b>AI-generated concept / portfolio mockup</b>, bukan bukti penghargaan resmi. Nama Sandi sengaja dipakai sebagai identitas visual.</p>
+      </div>
+      <div class="award-grid stagger">
+        <article class="award-card">
+          <div class="award-top"><span>AI CONCEPT / 01</span><b>2026</b></div>
+          <div class="trophy trophy-one">✦</div><div class="award-rank">01</div>
+          <h3>SANDI SAPTA A.P</h3><p>Creative Technology<br>Excellence Concept</p><div class="award-line"></div><small>AI-GENERATED VISUAL</small>
+        </article>
+        <article class="award-card featured">
+          <div class="award-top"><span>AI CONCEPT / 02</span><b>2026</b></div>
+          <div class="trophy trophy-two">♛</div><div class="award-rank">01</div>
+          <h3>SANDI SAPTA A.P</h3><p>Digital Experience<br>Champion Concept</p><div class="award-line"></div><small>AI-GENERATED VISUAL</small>
+        </article>
+        <article class="award-card">
+          <div class="award-top"><span>AI CONCEPT / 03</span><b>2026</b></div>
+          <div class="trophy trophy-three">◆</div><div class="award-rank">TOP</div>
+          <h3>SANDI SAPTA A.P</h3><p>Future Developer<br>Showcase Concept</p><div class="award-line"></div><small>AI-GENERATED VISUAL</small>
+        </article>
+      </div>
+      <div class="achievement-note">CONCEPTUAL DISPLAY · DO NOT PRESENT AS OFFICIAL CERTIFICATION</div>
+    </section>
+
+    <section id="contact" class="contact section reveal cinematic-section">
+      <div class="contact-card">
+        <div class="contact-bg">SANDI</div>
+        <div class="section-title"><span>04</span> Contact</div>
+        <h3>Let's create something<br><span>meaningful.</span></h3>
+        <p>Untuk kolaborasi, project, atau sekadar ngobrol soal teknologi.</p>
+        <div class="contact-list">
+          <a href="mailto:emailkamu@example.com">Email <span>↗</span></a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026</span> SANDI SAPTA A.P <i>·</i> BUILT WITH CURIOSITY.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
